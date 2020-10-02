@@ -5,12 +5,10 @@ import file_operation as fo
 app = Flask(__name__)
 
 
-@app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
-# Admin Page Routes Goes Here
 
 @app.route('/adminlogin' , methods = ['POST'])
 def adminlogin():
